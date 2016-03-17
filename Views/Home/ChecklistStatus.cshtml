@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "ChecklistStatus";
+}
+
+<h2>ChecklistStatus</h2>
+
+@*.messages>(.message.row>(.title.span10>lorem5)+(.date.span2>{Feb 12, 2016})+(.contents.span12>lorem)+(.toolbar.span12>button.btn.btn-primary.reply-button>{Reply})+.replies.span12)*5*@
+@*.ChecklistStatus>table.ChecklistStatusTable.span12>(tr.TableHeader>td.HouseholdHeader.span4{HouseholdHeader}+td.ConsultantVisitHeader.span1{ConsultantVisitHeader}+td.InHomeChecklistHeader.span5{InHomeChecklistHeader}+td.FamilyHistoryClassHeader{FamilyHistoryClassHeader}.span2)*2*@
+@*.ChecklistStatus>table.ChecklistStatusTable.span12>(tr.TableHeader>td.HouseholdHeader.span4{HouseholdHeader}+td.ConsultantVisitHeader.span1{ConsultantVisitHeader}+td.InHomeChecklistHeader.span5{InHomeChecklistHeader}+td.FamilyHistoryClassHeader{FamilyHistoryClassHeader}.span2)+(tr.TableHeader>td.HouseholdHeader.span4{HouseholdHeader}+td.ConsultantVisitHeader.span1{ConsultantVisitHeader}+td.InHomeChecklistHeader.span1{InHomeChecklistHeader}+td.InHomeChecklistHeader.span1{InHomeChecklistHeader}+td.InHomeChecklistHeader.span1{InHomeChecklistHeader}+td.InHomeChecklistHeader.span1{InHomeChecklistHeader}+td.InHomeChecklistHeader.span1{InHomeChecklistHeader}+td.FamilyHistoryClassHeader{FamilyHistoryClassHeader}.span2)*@
+<div class="ChecklistStatus">
+  <table class="ChecklistStatusTable">
+    <colgroup span="4"></colgroup>
+    <colgroup span="1"></colgroup>
+    <colgroup span="5"></colgroup>
+    <colgroup span="2"></colgroup>
+    <tr class="TableHeader">
+      <td class="BlankHeader" rowspan="2" colspan="4"></td>
+      <td class="ConsultantVisitHeader"></td>
+      <th class="InHomeChecklistHeader1" colspan="5" scope="colgroup">In-Home Checklist</th>
+      <th class="FamilyHistoryClassHeader" colspan="2" scope="colgroup"></th>
+    </tr>
+    <tr>
+      <th scope="col" class="ConsultantVisitHeader">Consultant Visits</th>
+      <th scope="col" class="InHomeChecklistHeader2">LDS.org Login</th>
+      <th scope="col" class="InHomeChecklistHeader2">Family Tree: Great-grandparents</th>
+      <th scope="col" class="InHomeChecklistHeader2">Index 1 Batch</th>
+      <th scope="col" class="InHomeChecklistHeader2">Attach Indexed Record</th>
+      <th scope="col" class="InHomeChecklistHeader2">Reserve an Ordinance</th>
+      <th scope="col" class="FamilyHistoryClassHeader">Family History Class</th>
+      <th scope="col" class="FamilyHistoryClassHeader">1 Month Follow Up</th>
+    </tr>
+    <tr>
+      <th scope="row" class="HouseholdHeader" colspan="4">Total Number</th>
+      <td class="ConsultantVisitHeader GridCellDataText">25</td>
+      <td class="InHomeChecklistHeader2 GridCellDataText">28</td>
+      <td class="InHomeChecklistHeader2 GridCellDataText">16</td>
+      <td class="InHomeChecklistHeader2 GridCellDataText">15</td>
+      <td class="InHomeChecklistHeader2 GridCellDataText">16</td>
+      <td class="InHomeChecklistHeader2 GridCellDataText">16</td>
+      <td class="FamilyHistoryClassHeader GridCellDataText">8</td>
+      <td class="FamilyHistoryClassHeader GridCellDataText">2</td>
+    </tr>
+    <tr>
+      <th scope="row" class="HouseholdHeader" colspan="4">Households</th>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+    </tr>
+    <tr class="HouseholdDataRow">
+      <td class="HouseholdName" colspan="4">Harris, Greg & Misti</td>
+      <td class="GridCellDataText">Dec 28 2015</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText NoCell">No</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText NoCell">No</td>
+      <td class="GridCellDataText NoCell">No</td>
+    </tr>
+    <tr>
+      <th scope="row" class="HouseholdHeader" colspan="4">Individuals</th>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+      <td class="BlankDataCell"></td>
+    </tr>
+    <tr class="HouseholdDataRow">
+      <td class="HouseholdName" colspan="4">Greg</td>
+      <td class="GridCellDataText">Dec 28 2015</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText NoCell">No</td>
+    </tr>
+    <tr class="HouseholdDataRow">
+      <td class="HouseholdName" colspan="4">Misti</td>
+      <td class="GridCellDataText">Dec 28 2015</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText NoCell">No</td>
+      <td class="GridCellDataText NoCell">No</td>
+    </tr>
+    <tr class="HouseholdDataRow">
+      <td class="HouseholdName" colspan="4">Aurora</td>
+      <td class="GridCellDataText">Dec 28 2015</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText NoCell">No</td>
+    </tr>
+    <tr class="HouseholdDataRow">
+      <td class="HouseholdName" colspan="4">Aaron</td>
+      <td class="GridCellDataText">Dec 28 2015</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText NoCell">No</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText">Yes</td>
+      <td class="GridCellDataText NoCell">No</td>
+      <td class="GridCellDataText NoCell">No</td>
+    </tr>
+  </table>
+</div>
+</br></br>
